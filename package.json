@@ -13,9 +13,5 @@
 		"cors": "^2.8.5",
 		"express": "^4.18.2",
 		"mongoose": "^6.6.5"
-	},
-	"devDependencies": {
-		"dotenv": "^16.0.3",
-		"nodemon": "^2.0.20"
 	}
 }

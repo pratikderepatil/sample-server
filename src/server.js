@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const userRoute = require("./features/user/user.router");
@@ -6,7 +5,7 @@ const productRoute = require("./features/product/product.router");
 const cartRoute = require("./features/cart/cart.router");
 const connect = require("./config/db");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 const app = express();
 app.use(express.json());
 app.use(cors());
