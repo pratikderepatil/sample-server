@@ -1,0 +1,28 @@
+POST /users/login
+POST /users/signup
+
+GET /products/
+
+GET /carts/
+POST /carts/
+PATCH /carts/:id
+DELETE /carts/:id
+
+User{
+	name: String, requried, unique
+	password: String, requried
+	email: String, requried, unique
+	age: Number,
+}
+Product{
+	name: String, requried
+	description: String,
+	image: String
+	price: Number, requried, min:1
+	quantity: Number, requried
+}
+Cart{
+	user: User, requried
+	product: Product, requried
+	quantity: Number, requried
+}
